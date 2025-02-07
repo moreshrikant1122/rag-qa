@@ -1,0 +1,57 @@
+# Virtual Environment
+venv/
+.env
+
+# Python Bytecode & Cache Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs & Temporary Files
+logs/
+*.log
+debug.log
+nohup.out
+
+# IDE & Editor-Specific Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Dependency Files
+Pipfile
+Pipfile.lock
+
+# Model & Vector Store Data
+models/
+chroma_db/
+faiss_index/
+*.pt
+*.h5
+*.onnx
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Docker & Build Files
+docker-compose.override.yml
+*.dockerfile
+*.dockerignore
+
+# FastAPI Auto-Generated Files
+__pycache__/
+*.sqlite3
+
+# Node.js (If you have frontend)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Dataset & Large Files
+data/
+*.csv
+*.json
+*.xlsx
