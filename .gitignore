@@ -45,13 +45,10 @@ docker-compose.override.yml
 __pycache__/
 *.sqlite3
 
-# Node.js (If you have frontend)
-node_modules/
-package-lock.json
-yarn.lock
 
 # Dataset & Large Files
 data/
 *.csv
 *.json
 *.xlsx
+*.ipynb
