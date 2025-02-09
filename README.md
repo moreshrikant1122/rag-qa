@@ -1,7 +1,8 @@
 **Q&A Chatbot with FastAPI and Vector Store**
 
 A Q&A Chatbot that uses FAISS as a vector store and OpenAI GPT for generating responses based on Ubuntu documentation.
-Features
+Features:
+
  Retrieval-Augmented Generation (RAG): Retrieves relevant documents before answering.
  Supports FAISS : Vector store for efficient document search.
  FastAPI Backend: Deploys as a REST API with Swagger UI (/docs).
