@@ -9,7 +9,7 @@ from langchain_community.docstore.in_memory import InMemoryDocstore
 from uuid import uuid4
 
 # Load documents
-from load_data import load_documents
+from src.load_data import load_documents
 
 # Step 1: Load Data & Split into Chunks
 def chunk_documents(docs, chunk_size=512, chunk_overlap=50):

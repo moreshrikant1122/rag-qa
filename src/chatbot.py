@@ -1,7 +1,7 @@
 import openai
 import os
 from dotenv import load_dotenv
-from vector_store import load_vector_store,retrieve_documents
+from src.vector_store import load_vector_store,retrieve_documents
 
 # Load API Key from .env
 load_dotenv()
@@ -32,6 +32,7 @@ def generate_response(query, stream=False):
         return
     
     return response.choices[0].message.content
+
 
 # Running in CLI
 if __name__ == "__main__":
