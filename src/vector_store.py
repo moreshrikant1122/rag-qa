@@ -9,7 +9,7 @@ from langchain_community.docstore.in_memory import InMemoryDocstore
 from uuid import uuid4
 
 # Load documents
-from src.load_data import load_documents
+from load_data import load_documents
 
 # Step 1: Load Data & Split into Chunks
 def chunk_documents(docs, chunk_size=512, chunk_overlap=50):
@@ -38,7 +38,9 @@ def add_documents_to_vector_store(vector_store, chunks):
 
     vector_store.add_documents(documents=chunks, ids=uuids)
 
-    ids = vector_store.save_local("/home/justdial/Desktop/rag_project/qa-chatbot/models/faiss_index")
+    path = (Path.cwd() / "models/faiss_index").resolve()
+
+    ids = vector_store.save_local(path)
 
     return ids
 
